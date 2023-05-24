@@ -1,0 +1,4 @@
+#!/bin/bash 
+echo $CFILE
+BASENAME="${CFILE%.*}"
+echo $BASENAME

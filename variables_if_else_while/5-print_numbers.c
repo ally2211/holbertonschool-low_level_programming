@@ -7,14 +7,16 @@
  */
 int main(void)
 {
-	int digit;
+	char digits[] = "0123456789";
+	size_t i;
 
-	for (digit = 0; digit < 10; digit++)
+	for (i = 0; i < 10; i++)
 	{
-		putchar(digit + '0');
+		printf("%c", digits[i]);
 	}
 
-	putchar('\n');
+	printf("\n");
 
-	return (0);
+	return 0;
 }
+

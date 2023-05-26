@@ -1,12 +1,12 @@
 
 #include <stdio.h>
 
-/** 
+/**
  * main - Entry point
  *
  * Return: Always 0 (Success)
  */
-int main() 
+int main(void)
 {
 	putchar('_');
 	putchar('p');
@@ -18,5 +18,5 @@ int main()
 	putchar('r');
 	putchar('\n');
 
-	return 0;
+	return (0);
 }

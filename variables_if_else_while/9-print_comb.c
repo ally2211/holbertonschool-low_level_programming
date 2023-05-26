@@ -8,8 +8,8 @@
 int main(void)
 {
 	int digit;
-
-	putchar('0');
+	digit = 0;
+	putchar(digit + '0');
 	for (digit = 1; digit <= 9; digit++)
 	{
 		putchar(',');

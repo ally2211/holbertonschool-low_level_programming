@@ -8,15 +8,15 @@
 int main(void)
 {
 	int digit;
-	digit = 0;
 
-	putchar(digit + '0');
-
-	for (digit = 1; digit <= 9; digit++)
+	for (digit = 0; digit <= 9; digit++)
 	{
-		putchar(',');
-		putchar(' ');
 		putchar(digit + '0');
+		if (digit != 9)
+		{
+			putchar(',');
+		}
+		putchar(' ');
 	}
 
 	return (0);

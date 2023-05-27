@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 void print_alphabet(void);
 
@@ -19,6 +20,6 @@ void print_alphabet(void)
 }
 int main(void)
 {
-	print_alphabet();
+	print_alphabet(void);
 	return (0);
 }

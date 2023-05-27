@@ -1,5 +1,12 @@
-#!/bin/bash
-# Get the process tree in a user-oriented format
-#www.geeksforgeeks.org/pstree-command-in-linux-with-examples/
+#include <stdio.h>
 
-pstree -U -p
+void print_alphabet(void)
+{
+	char letter = 'a';
+	while (letter <= 'z')
+	{
+	_putchar(letter);
+	letter++;
+	}
+	_putchar('\n');
+}

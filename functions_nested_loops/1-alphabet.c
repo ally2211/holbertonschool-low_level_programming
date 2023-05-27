@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * main - check the code
+ * print_alphabet - use function in header
  *
  * Return: Always 0.
  */
-void print_alphabet()
+void print_alphabet(void)
 {
 	char letter = 'a';
 	while (letter <= 'z')

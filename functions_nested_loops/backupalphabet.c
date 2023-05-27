@@ -1,5 +1,7 @@
 #include "main.h"
 
+void print_alphabet();
+
 /**
  * main - check the code
  *
@@ -14,4 +16,9 @@ void print_alphabet()
 		letter++;
 	}
 	_putchar('\n');
+}
+int main(void)
+{
+	print_alphabet();
+	return (0);
 }

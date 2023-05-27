@@ -7,7 +7,7 @@
  */
 void print_alphabet(void)
 {
-	counter = '1';
+	counter = 1;
 
 	while (counter <= 10)
 	{

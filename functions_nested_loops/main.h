@@ -1,2 +1,3 @@
-void print_alphabet_x10();
+void islower();
+int _islower(int);
 void _putchar();

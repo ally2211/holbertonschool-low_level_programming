@@ -2,11 +2,9 @@
 
 /**
  * _islower - checks lowercase character
- *
- * Return: Either 1 or 0.
- */
-/**
- * ch - is a character passed to function a-z
+ * @ch: alpha character passed to function
+ * 
+ * Return: Either 1 or 0. 1 means it's not lowercase. 0 it is.
  */
 int _islower(int ch)
 {

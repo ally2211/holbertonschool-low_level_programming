@@ -1,2 +1,1 @@
-void _putchar();
-int print_last_digit(int);
+int _abs(int);

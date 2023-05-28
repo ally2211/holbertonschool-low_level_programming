@@ -1,2 +1,2 @@
 void _putchar();
-void print_last_digit();
+int print_last_digit(int);

@@ -6,7 +6,7 @@
  *
  * Return: the last digit of n
  */
-int print_last_parent(int n)
+int print_last_digit(int n)
 {
 	int lastdigit = n % 10;
 

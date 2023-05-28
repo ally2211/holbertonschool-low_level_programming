@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * print_sign - prints the sign of a number
+ * _abs - returns the absolute value 
  * @n: number passed to function
  *
- * Return: Either 1 or 0. 1 when n is greater than 0. 0 is a negative number
- */
+ * Return: the absolute value of n
+ * */
 int _abs(int n)
 {
 	if (n < 0)

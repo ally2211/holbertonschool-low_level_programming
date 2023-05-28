@@ -1,2 +1,2 @@
-int _islower(int);
+int _isalpha(int);
 void _putchar();

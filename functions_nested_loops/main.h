@@ -1,2 +1,2 @@
-int printsign(int);
+int print_sign(int);
 void _putchar();

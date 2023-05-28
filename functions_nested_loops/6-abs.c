@@ -5,7 +5,7 @@
  * @n: number passed to function
  *
  * Return: the absolute value of n
- * */
+ */
 int _abs(int n)
 {
 	if (n < 0)

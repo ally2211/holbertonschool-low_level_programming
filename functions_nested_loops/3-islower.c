@@ -3,7 +3,10 @@
 /**
  * _islower - checks lowercase character
  *
- * Return: Always 0.
+ * Return: Either 1 or 0.
+ */
+/**
+ * ch - is a character passed to function a-z
  */
 int _islower(int ch)
 {
@@ -11,5 +14,5 @@ int _islower(int ch)
 	{
 		return (1);
 	}
-	return (0);	
+	return (0);
 }

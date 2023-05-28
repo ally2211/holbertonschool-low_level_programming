@@ -1,2 +1,2 @@
-int _isalpha(int);
+int printsign(int);
 void _putchar();

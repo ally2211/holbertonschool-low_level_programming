@@ -9,6 +9,8 @@
  */
 int print_last_digit(int n)
 {
+	lastdigit = n % 10;
 
+	printf ('last digit is %c', lastdigit);
 	return (lastdigit);
 }

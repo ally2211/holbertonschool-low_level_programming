@@ -1,1 +1,2 @@
-int _abs(int);
+void _putchar();
+void print_last_string();

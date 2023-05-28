@@ -9,7 +9,7 @@ int main(void)
 {
 	int r;
 
-	r = printsign(95);
+	r = print_sign(95);
 	_putchar(',');
 	_putchar(' ');
 	_putchar(r + '0');

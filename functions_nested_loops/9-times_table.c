@@ -10,27 +10,18 @@ void times_table(void)
 {
 	int i;
 	int j;
-	size_t result_size;
 
 	for (i = 0; i <= 9; i++)
 	{
 		for (j = 0; j <= 9; j++)
 		{
-			result_size = sizeof(i * j);
 			if (i == 9 && j == 9)
 			{
-				printf("%d", i * j);
+				printf("%2d", i * j);
 			}
 			else
 			{
-				if (result_size < 5)
-				{
-					printf("%d, ", i * j);
-				}
-				else
-				{
-					printf("%d,  ", i * j);
-				}
+				printf(" %2d, ", i * j);
 			}
 		}
 		printf("\n");

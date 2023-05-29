@@ -11,9 +11,9 @@ void print_to_98(int n)
 {
 	int cnt;
 
-	if (n == 0)
+	if (n == 98)
 	{
-		return (0);
+		printf("%d", n);
 	}
 	else if (n > 98)
 	{
@@ -45,6 +45,4 @@ void print_to_98(int n)
 		}
 		printf("\n");
 	}
-	
-	return (0);
 }

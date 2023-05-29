@@ -17,11 +17,16 @@ void times_table(void)
 		{
 			if (i == 9 && j == 9)
 			{
-				printf("%03d", i * j);
+				printf("%d", i * j);
 			}
 			else
 			{
-				printf("%03d,", i * j);
+				if (sizeof(i * j) == 2)
+				{	
+					printf("%d, ", i * j);
+				}
+				else
+				{	printf("%d,  ", i * j);
 			}
 		}
 		printf("\n");

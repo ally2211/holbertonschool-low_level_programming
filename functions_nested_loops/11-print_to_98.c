@@ -7,7 +7,7 @@
  *
  * Return: 0 (SUCCESS)
  */
-int print_to_98(int n)
+void print_to_98(int n)
 {
 	int cnt;
 

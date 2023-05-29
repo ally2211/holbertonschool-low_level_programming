@@ -23,13 +23,15 @@ void times_table(void)
 			}
 			else
 			{
-				if (result_size > 1)
-				{	
+				if (result_size > 2)
+				{
 					printf("%d, ", i * j);
+					printf("%zu ", result_size);
 				}
 				else
-				{	
+				{
 					printf("%d,  ", i * j);
+					printf("%zu  ", result_size);
 				}
 			}
 		}

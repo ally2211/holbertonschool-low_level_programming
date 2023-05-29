@@ -17,7 +17,7 @@ void print_to_98(int n)
 	}
 	else if (n > 98)
 	{
-		for (cnt = n; cnt = 98; cnt--)
+		for (cnt = n; cnt >= 98; cnt--)
 		{
 			if (cnt == n)
 			{
@@ -32,7 +32,7 @@ void print_to_98(int n)
 	}
 	else
 	{
-		for (cnt = n; cnt = 98; cnt++)
+		for (cnt = n; cnt <= 98; cnt++)
 		{
 			if (cnt == n)
 			{

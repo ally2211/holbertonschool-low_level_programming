@@ -23,7 +23,7 @@ void times_table(void)
 			}
 			else
 			{
-				if (result_size > 2)
+				if (result_size < 5)
 				{
 					printf("%d, ", i * j);
 				}

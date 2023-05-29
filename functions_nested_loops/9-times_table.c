@@ -26,12 +26,10 @@ void times_table(void)
 				if (result_size > 2)
 				{
 					printf("%d, ", i * j);
-					printf("%zu ", result_size);
 				}
 				else
 				{
 					printf("%d,  ", i * j);
-					printf("%zu  ", result_size);
 				}
 			}
 		}

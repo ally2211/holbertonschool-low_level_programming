@@ -1,1 +1,1 @@
-void times_table(void);
+int add(int, int);

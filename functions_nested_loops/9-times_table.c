@@ -1,6 +1,5 @@
 #include "main.h"
 #include <stdio.h>
-#include <
 
 /**
  * times_table- prints every minute of the day

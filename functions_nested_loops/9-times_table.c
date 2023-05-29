@@ -21,7 +21,7 @@ void times_table(void)
 			}
 			else
 			{
-				printf(",%2d ", i * j);
+				printf(",%3d ", i * j);
 			}
 		}
 		printf("\n");

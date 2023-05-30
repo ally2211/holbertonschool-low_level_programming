@@ -1,1 +1,2 @@
-void print_to_98(int n);
+void _putchar();
+int print_last_digit(int);

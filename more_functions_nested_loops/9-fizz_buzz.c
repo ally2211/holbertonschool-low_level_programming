@@ -13,9 +13,9 @@ int main(void)
 }
 
 /**
- * fizz_buzz - print numbers 1-100 followed by new line
+ * Fizz_Buzz - print numbers 1-100 followed by new line
  *
- * return: 0 for success
+ * return: none
  */
 void Fizz_Buzz(void)
 {
@@ -39,5 +39,6 @@ void Fizz_Buzz(void)
 		{
 			printf("%d ", i);
 		}
+		printf("\n");
 	}
 }

@@ -2,33 +2,32 @@
 
 /**
  * print_triangle - draws a triangle in the terminal
- * @n:  number of # to print
+ * @size:  number of # to print
  *
  * Return: void
  */
-void print_triangle(int n)
+void print_triangle(int size)
 {
-	int i = 1;
-	int j;
+	int row;
+	int space;
+	int hash;
 
-	if (n == 0 || n < 0)
+	if (size <= 0)
 	{
 		_putchar('\n');
+		return;
 	}
-	else
+	for (row = 1; row <= size; row++)
 	{
-		while (i <= n)
+		for (space = 1; space <= (size - row); space++)
 		{
-			for (j = i; j <= n; j--)
-			{
-				_putchar(' ');
-			}
-			for (j = i; j >= n; j--)
-			{
-				_putchar('#');
-			}
-			i++;
-			_putchar('\n');
+			_putchar(' ');
 		}
+		for (hash = 1; hash <= row; hash++)
+		{
+			_putchar('#');
+		}
+		_putchar('\n');
 	}
 }
+

@@ -3,8 +3,8 @@
 
 /**
  * swap_int - function that swaps the values of two integers
- * a: one of the arguments passing an integer
- * b: the other argument passes a n integer
+ * @a: one of the arguments passing an integer
+ * @b: the other argument passes a n integer
  *
  * Return: void
  */

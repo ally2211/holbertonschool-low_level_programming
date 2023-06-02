@@ -4,6 +4,7 @@
  * _puts - function that prints a string, followed by a new line, to stdout
  * @str: pointer passed
  *
+ * return: void
  */
 void _puts(char *str)
 {

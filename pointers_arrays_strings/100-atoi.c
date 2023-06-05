@@ -40,7 +40,7 @@ int _atoi(char *s)
 				s++;
 			}
 		}
-		else if (result != 0) // if it's not a digit and have result then stop
+		else if (result != 0) 
 			break;
 		s++;
 	}

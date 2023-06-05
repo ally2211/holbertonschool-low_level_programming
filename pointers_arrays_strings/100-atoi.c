@@ -17,33 +17,36 @@ int _atoi(char *s)
 	while (*s != '\0')
 	{
 		if (*s == ' ')
-		{
 			s++;
-		}
 		else if (*s == '-')
 		{
 			sign = sign * -1;
 			s++;
 		}
 		else if (*s == '+')
-		{
 			s++;
-		}
 		else if (*s >= '0' && *s <= '9')
 		{
 			digit = *s - '0';
 
-			result = (result * 10) + digit;
-			s++;
+			if (result >= (INT_MAX / 10))
+			{
+				result = INT_MAX;
+				s++;
+			}
+			else
+			{
+				result = (result * 10) + digit;
+				s++;
+			}
 		}
 		else if (result != 0)
-		{
 			break;
-		}
 		else
-		{
 			s++;
-		}
 	}
-	return (result * sign);
+	if (result == INT_MAX && sign == -1)
+		return (INT_MIN);
+	else
+		return (result * sign);
 }

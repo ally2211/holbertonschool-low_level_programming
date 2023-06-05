@@ -14,7 +14,7 @@ int _atoi(char *s)
 	int result = 0;
 	int digit;
 
-	while (*s != '\0')
+	while ((*s != '\0'))
 	{
 		if (*s == ' ')
 			s++;
@@ -40,9 +40,10 @@ int _atoi(char *s)
 				s++;
 			}
 		}
-		else if (result != 0) 
+		else if (result == 0)
+			s++;
+		else
 			break;
-		s++;
 	}
 	if (result == INT_MAX && sign == -1)
 		return (INT_MIN);

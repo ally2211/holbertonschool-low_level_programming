@@ -40,10 +40,9 @@ int _atoi(char *s)
 				s++;
 			}
 		}
-		else if (result != 0)
+		else if (result != 0) // if it's not a digit and have result then stop
 			break;
-		else
-			s++;
+		s++;
 	}
 	if (result == INT_MAX && sign == -1)
 		return (INT_MIN);

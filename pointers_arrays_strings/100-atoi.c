@@ -3,7 +3,7 @@
 #include <limits.h>
 
 /**
- * atoi - convert a string to an integer
+ * _atoi - convert a string to an integer
  * @s: string passed to atoi function
  *
  * Return: int the converted character

@@ -20,7 +20,8 @@ char *_strncpy(char *dest, const char *src, int n)
 
 	}
 
-	if (i < n)
+	/** we all the remaining spaces to be null */
+	for (; i < n; i++)
 	{
 		dest[i] = '\0';
 	}

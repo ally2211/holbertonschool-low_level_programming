@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * _strncpy - Copies a string.  If no null in src then none copied. 
+ * _strncpy - Copies a string.  If no null in src then none copied.
  * if the length of src is less than n, then a null is place in dest.
  * @dest: The destination string.
  * @src: The source string.
@@ -25,7 +25,7 @@ char *_strncpy(char *dest, const char *src, int n)
 		dest[i] = '\0';
 	}
 
-	p = dest;	
+	p = dest;
 	return (p);
 }
 

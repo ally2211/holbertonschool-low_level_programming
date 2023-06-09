@@ -15,10 +15,10 @@ bool is_separator(char c)
 	for (i = 0; separators[i] != '\0'; i++)
 	{
 	if (c == separators[i])
-		return true;
+		return (true);
 	}
 
-	return false;
+	return (false);
 }
 
 /**

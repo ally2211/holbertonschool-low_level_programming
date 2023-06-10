@@ -13,9 +13,6 @@ int main(void)
 
     f = _strchr(s, '\0');
 
-    if (f != NULL)
-    {
-        printf("%s\n", f);
-    }
+    printf("%s\n", (f == NULL ? "nil" : f));
     return (0);
 }

@@ -2,7 +2,7 @@
 #include <string.h>
 
 /**
- * _strbrk - a function that searches a string for any of a set of bytes.
+ * _strpbrk - a function that searches a string for any of a set of bytes.
  * @s: This is the string to be scanned
  * @accept: This is the character to be searched in str.
  *

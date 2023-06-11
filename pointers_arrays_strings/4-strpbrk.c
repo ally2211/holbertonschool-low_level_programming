@@ -6,7 +6,7 @@
  * @s: This is the string to be scanned
  * @accept: This is the character to be searched in str.
  *
- * Returns the number of bytes in the initial segment of s
+ * Return: bthe number of bytes in the initial segment of s
  * which consist only of bytes from accept
  **/
 char *_strpbrk(char *s, char *accept)

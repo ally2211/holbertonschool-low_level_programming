@@ -2,7 +2,7 @@
 #include <string.h>
 
 /**
- * _strpstr - a function that searches a string for any of a set of bytes.
+ * _strstr - a function that searches a string for any of a set of bytes.
  * @haystack: This is the string to be examined
  * @needle: This is the sub-string to be searched in haystack string.
  *

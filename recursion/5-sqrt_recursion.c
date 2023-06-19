@@ -1,6 +1,6 @@
 #include "main.h"
 
-int squareRootHelper(int n, int start, int end);
+int squareRootHelper(int n, long start, long end);
 
 /**
  * _sqrt_recursion - calculate square root using recursion

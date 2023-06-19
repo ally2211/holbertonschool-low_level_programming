@@ -27,18 +27,18 @@ int _sqrt_recursion(int n)
 /**
  * squareRootHelper - using start and n/2 as end iterate to find sqrroot
  * base case: mid is also sqroot
- * @n is number
+ * @n: base
  * @start: is 1
  * @end: is n/2
  *
  * Return:  sqrroot
  */
-int squareRootHelper(int n, int start, int end)
+int squareRootHelper(int n, long start, long end)
 {
 	if (start <= end)
 	{
-		int mid = (start + end) / 2;
-		int square = mid * mid;
+		long mid = (start + end) / 2;
+		long square = mid * mid;
 
 		if (square == n)
 		{

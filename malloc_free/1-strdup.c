@@ -11,11 +11,11 @@
  **/
 char *_strdup(char *str)
 {
-	int length = strlen(str) + 1;
-	char *newpointer = (char *)malloc(length * sizeof(char));
+	int length = strlen(str);
+	char *newpointer = (char *)malloc((length + 1) * sizeof(char));
 	int i;
 
-	if (newpointer == NULL || strlen(str) == 0)
+	if (newpointer == NULL || length == 0)
 	{
 		return (NULL);
 	}

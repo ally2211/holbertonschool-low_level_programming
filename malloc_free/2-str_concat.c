@@ -11,30 +11,39 @@
  **/
 char *str_concat(char *s1, char *s2)
 {
-	int length1 = strlen(s1);
-	int length2 = strlen(s2);
-	char *newpointer = (char *)malloc((length1 + length2 + 1) * sizeof(char));
-	int i = 0, j = 0;
+	int length1, length2, i = 0, j = 0;
+	char *newpointer;
 
-	if (newpointer == NULL || ((s1 == NULL) && (s2 == NULL)))
-	{
+	if ((s1 == NULL) && (s2 == NULL))
 		return (NULL);
+	else if (s1 == NULL)
+	{
+		length1 = 0;
+		length2 = strlen(s2);
+	}
+	else if (s2 == NULL)
+	{
+		length2 = 0;
+		length1 = strlen(s1);
+	}
+	else
+	{
+		length1 = strlen(s1);
+		length2 = strlen(s2);
 	}
 
-	if (s1 != NULL)
-	{
-		for (i = 0; i < length1; i++)
-		{
-			newpointer[i] = s1[i];
-		}
-	}
+	newpointer = (char *)malloc((length1 + length2 + 1) * sizeof(char));
 
-	if (s2 != NULL)
+	if (newpointer == NULL)
+		return (NULL);
+
+	for (i = 0; i < length1; i++)
 	{
-		for (j = 0; j < length2; j++, i++)
-		{
-			newpointer[i] = s2[j];
-		}
+		newpointer[i] = s1[i];
+	}
+	for (j = 0; j < length2; j++, i++)
+	{
+		newpointer[i] = s2[j];
 	}
 	newpointer[i] = '\0';
 	return (newpointer);

@@ -1,6 +1,0 @@
-#!/bin/bash
-# Write a script that runs a C file through the preprocessor and save the result into another file.
-
-CFILE="main.c"
-# Run the C file through the preprocessor
-gcc -E "$CFILE" -o c

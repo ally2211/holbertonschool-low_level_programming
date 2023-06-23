@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "main.h"
 
 /**
  * main - will print its name even if rename
@@ -10,7 +11,8 @@
  */
 int main(int argc, char *argv[])
 {
-	int i, sum = 0;
+	int i = 1, j = 0, sum = 0;
+	char *result = argv[i];
 
 	if (argc < 2)
 	{
@@ -18,12 +20,16 @@ int main(int argc, char *argv[])
 		return (0);
 	}
 
-	for (i = 1; i < argc; i++)
+	for (i = 1; i <= argc; i++)
 	{
-		if (atoi(argv[i]) == 0)
-		{	
-			printf("Error\n");
-			return (1);
+		/*result = argv[i];*/
+		for (j = 0; result[j] != '\0'; j++)
+		{
+			if(!_isdigit(result[j]))
+			{
+				printf("Error\n");
+				return (1);
+			}
 		}
 		sum += atoi(argv[i]);
 	}

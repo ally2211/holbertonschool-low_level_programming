@@ -36,6 +36,6 @@ char *str_concat(char *s1, char *s2)
 			newpointer[i] = s2[j];
 		}
 	}
-	newpointer = '\0';
+	newpointer[i] = '\0';
 	return (newpointer);
 }

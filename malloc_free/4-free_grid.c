@@ -3,7 +3,7 @@
 #include <stdlib.h>
 /**
  * free_grid - function that frees a 2 dimensional array of int
- * @width: one dimension
+ * @grid: a 2 dim grid actually from created last exercise
  * @height: second dimension
  *
  * Return: a pointer of int array or NULL when w & h are <= 0

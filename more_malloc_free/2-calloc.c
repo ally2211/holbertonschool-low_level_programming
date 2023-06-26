@@ -15,15 +15,15 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	void *newpointer;
 	unsigned int i;
 
-	if (nmemb == 0 || size ==0)
-		return NULL;
+	if (nmemb == 0 || size == 0)
+		return (NULL);
 
-	newpointer = malloc((nmemb + 1) * size);
+	newpointer = malloc((nmemb) * size);
 
 	if (newpointer == NULL)
-		return NULL;
+		return (NULL);
 
-	for(i = 0; i < nmemb; i ++)
+	for (i = 0; i < nmemb; i++)
 	{
 		if (size == sizeof(char))
 		{

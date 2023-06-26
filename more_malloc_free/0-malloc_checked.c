@@ -10,8 +10,9 @@
 void *malloc_checked(unsigned int b)
 {
 	void *newpointer;
+
 	newpointer = malloc(b);
-	
+
 	if (newpointer == NULL)
 	{
 		exit(98);

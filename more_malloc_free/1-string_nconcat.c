@@ -17,11 +17,13 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	size_t  length1;
 	size_t i, j;
 
-	if (s1 == NULL)
+	if ((s1 == NULL) && (s2 == NULL))
+		return (NULL);
+	else if (s1 == NULL)
 		length1 = 0;
 	else
 		length1 = strlen(s1);
-	
+
 	newpointer = malloc((length1 + 1 + n) * sizeof(char));
 
 	if (newpointer == NULL)

@@ -17,43 +17,23 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	size_t  length1;
 	size_t i, j;
 
-	if ((s1 == NULL) && (s2 == NULL))
-	{
-		length1 = 0;
+	if (s1 == NULL)
 		s1 = "";
+	if (s2 == NULL)
 		s2 = "";
-	}
-	else if (s1 == NULL)
-	{
-		length1 = 0;
-		s1 = "";
-	}
-	else if (s2 == NULL)
-	{
-		length1 = strlen(s1);
-		s2 = "";
-	}
-	else
-	{
-		length1 = strlen(s1);
-	}
+
+	length1 = strlen(s1);
 
 	newpointer = malloc((length1 + 1 + n) * sizeof(char));
 
 	if (newpointer == NULL)
-	{
 		exit(98);
-	}
 
 	for (i = 0; i < length1; i++)
-	{
 		newpointer[i] = s1[i];
-	}
 
 	for (j = 0; j < n; j++, i++)
-	{
 		newpointer[i] = s2[j];
-	}
 
 	newpointer[i] = '\0';
 	return (newpointer);

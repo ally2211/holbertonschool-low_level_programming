@@ -1,3 +1,8 @@
+#ifndef NAME_H
+#define NAME_H
+
 void print_name_as_is(char *name);
 void print_name_uppercase(char *name);
 void print_name(char *name, void (*f)(char *));
+
+#endif

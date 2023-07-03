@@ -45,11 +45,8 @@ void print_all(const char * const format, ...)
 					printf("(nil)");
 					printed = 1;
 				}
-				else
-				{
-					printf("%s", str);
-					printed = 1;
-				}
+				printf("%s", str);
+				printed = 1;
 				break;
 		}
 

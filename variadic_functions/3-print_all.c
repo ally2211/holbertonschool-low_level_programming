@@ -27,7 +27,7 @@ void print_argument(char type, va_list ap)
 			break;
 		case 's':
 			{
-				*str = va_arg(ap, char *);
+				str = va_arg(ap, char *);
 
 				if (str == NULL)
 					str = "(nil)";

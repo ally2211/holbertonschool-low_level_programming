@@ -2,7 +2,6 @@
 #include <stdio.h>
 #include <stdarg.h>
 #include <stddef.h>
-
 /**
  * print_all - a function that prints anything
  * @format: a list of types of arguments passed to the function
@@ -12,14 +11,12 @@
 void print_all(const char * const format, ...)
 {
 	va_list ap;
-	int num;
+	int num, printed;
 	char *str;
 	float fnum;
 	const char *ptr = format;
-	int printed;
 
 	va_start(ap, format);
-
 	while (format != NULL && *ptr != '\0')
 	{
 		switch (*ptr)
@@ -41,23 +38,17 @@ void print_all(const char * const format, ...)
 			case 's':
 				str = va_arg(ap, char *);
 				if (str == NULL)
-				{
-					printf("(nil)");
-					printed = 1;
-				}
+					str = "(nil)";
 				printf("%s", str);
 				printed = 1;
 				break;
 		}
-
 		if ((printed == 1) && *(ptr + 1))
 			printf(", ");
 
 		ptr++;
 		printed = 0;
 	}
-
 	printf("\n");
 	va_end(ap);
 }
-

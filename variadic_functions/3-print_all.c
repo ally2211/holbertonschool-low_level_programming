@@ -32,8 +32,8 @@ void print_argument(char type, va_list ap)
 				if (str == NULL)
 					str = "(nil)";
 				printf("%s", str);
+				break;
 			}
-			break;
 	}
 }
 
@@ -59,6 +59,6 @@ void print_all(const char * const format, ...)
 	}
 
 	printf("\n");
-	
+
 	va_end(ap);
 }

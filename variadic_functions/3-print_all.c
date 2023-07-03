@@ -12,6 +12,8 @@
  */
 void print_argument(char type, va_list ap)
 {
+	char *str;
+
 	switch (type)
 	{
 		case 'c':
@@ -25,7 +27,8 @@ void print_argument(char type, va_list ap)
 			break;
 		case 's':
 			{
-				char *str = va_arg(ap, char *);
+				*str = va_arg(ap, char *);
+
 				if (str == NULL)
 					str = "(nil)";
 				printf("%s", str);
@@ -33,6 +36,7 @@ void print_argument(char type, va_list ap)
 			break;
 	}
 }
+
 /**
  * print_all - a function that prints anything
  * @format: a list of types of arguments passed to the function

@@ -2,10 +2,10 @@
 #include "lists.h"
 
 /**
- * get_nodeint_at_index - returns the nth node of a listint_t list.
+ * sum_listint - returns the sum of all the data (n) of a listint_t list.
  * @head: data structure head
  *
- * Return: if node does not exist return 0 otherwise return the nth node
+ * Return: if the list is empty return 0 otherwise the sum
  */
 int sum_listint(listint_t *head)
 {

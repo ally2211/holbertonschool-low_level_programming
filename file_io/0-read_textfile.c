@@ -40,7 +40,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	}
 
 	buffer[bytesRead] = '\0';
-	bytesWritten = fwrite(buffer, sizeof(char), bytesRead, stdout);
+	bytesWritten = fwrite(buffer, sizeof(char), bytesRead, stderr);
 
 	fclose(file);
 	free(buffer);

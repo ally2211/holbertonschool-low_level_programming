@@ -2,50 +2,44 @@
 #include "lists.h"
 
 /**
- * insert_nodeint_at_index - inserts a new node at a given position.
+ * delete_nodeint_at_index - deletes a node at a given position.
  * @head: data structure head
- * @idx: index of the list where the new node should be added. starts at 0
+ * @idx: index of the list where the new node should be deleted. starts at 0
  *
- * Return: the address of the new node, or NULL if it failed
+ * Return: 1 if succeeded and 0 if it failed
  */
-listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
+int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
-	listint_t *newNode;
-	listint_t *current, *previous;
-	unsigned int count;
+        listint_t *current;
+        listint_t *previous;
+        unsigned int count;
 
-	if (head == NULL)
-		return (NULL);
+	if (head == NULL || *head == NULL)
+		return -1; 
 
-	newNode = malloc(sizeof(listint_t));
-	if (newNode == NULL)
-		return (NULL);
-
-	newNode->n = n;
-	if (idx == 0)
-	{
-		newNode->next = *head;
-		*head = newNode;
-		return (newNode);
-	}
 	current = *head;
 	previous = NULL;
 	count = 0;
-	while (current != NULL && count < idx)
+
+	while (current != NULL && count < index)
 	{
 		previous = current;
 		current = current->next;
 		count++;
 	}
-	if (count == idx)
+
+	if (current == NULL)
+		return (-1); 
+
+	if (previous == NULL)
 	{
-		previous->next = newNode;
-		newNode->next = current;
-		return (newNode);
+		*head = current->next;
 	}
 	else
 	{
-		free(newNode);
-		return (NULL);
+		previous->next = current->next;
 	}
+
+	free(current);
+	return (1);
 }

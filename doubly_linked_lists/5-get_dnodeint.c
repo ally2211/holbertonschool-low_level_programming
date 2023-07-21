@@ -4,7 +4,7 @@
 #include <stdlib.h>
 
 /**
- * add_dnodeint_end - adds a new node at the end of a doubly linkedblist.
+ * get_dnodeint_end_at_index - returns nth node of a doubly linkedblist.
  * @head: a pointer to a pointer to the head of the dlistint_t list
  * @index: the index of the node starting from 0.
  *
